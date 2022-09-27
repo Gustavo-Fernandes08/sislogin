@@ -28,7 +28,7 @@
     $query_usuario = "SELECT id, nome, usuario
     FROM usuarios
     WHERE usuario =: usuario
-    LIMIT 1 ";
+    LIMIT 1";
 
     $result_usuario_usuario = $conn->prepare($query_usuario);
     $result_usuario->bindParam(':usuario', $dados['usuario'], PDO::PARAM_STR);
