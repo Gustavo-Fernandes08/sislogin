@@ -33,7 +33,10 @@
 	          <a class="nav-link" href="?page=cadastrar">Cadastrar Usuário</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="?page=cadastrar">Cadastrar Usuário</a>
+	          <a class="nav-link" href="?page=novo-ticket">Novo Ticket</a>
+	        </li>
+			<li class="nav-item">
+	          <a class="nav-link" href="?page=listar-ticket">Listar Ticket</a>
 	        </li>
 	       </ul>
 	   </div>
@@ -64,7 +67,13 @@
 							break;
 						case 'salvar':
 							include('salvar.php');
-							break;						
+							break;
+						case 'novo-ticket':
+							include('novo-ticket.php');
+							break;
+						case 'listar-ticket':
+							include('listar-ticket.php');
+							break;				
 						default:
 							print "<h1>Bem vindo ao clube!</h1>";
 					}

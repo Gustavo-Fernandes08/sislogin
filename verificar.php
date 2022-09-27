@@ -17,6 +17,6 @@
 		$_SESSION['nome'] = $row->nome;
 		print "<script>location.href='index2.php';</script>";
 	}else{
-		print "<script>alert('Usuário e/ou Senho incorretos');</script>";
+		print "<script>alert('Usuário e/ou Senha incorretos');</script>";
 		print "<script>location.href='index.php';</script>";
 	}
